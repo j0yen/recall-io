@@ -2,6 +2,24 @@
 
 > PRD-agentic-memory §A item 11 (recall export / recall import) — round-trippable serialization of the v0.1 recall store as NDJSON.
 
+## Install
+
+### One-liner
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/j0yen/recall-io/main/install.sh | bash
+```
+
+### Manual
+
+```sh
+git clone --depth 1 https://github.com/j0yen/recall-io.git
+cd recall-io
+./install.sh
+```
+
+Installs the `recall-io` binary via `cargo install --path . --locked`. Requires `cargo` / `rustc 1.85+` and `git`. Built binary lands in `~/.cargo/bin/`.
+
 ## Why
 
 PRD-agentic-memory §A item 11 (recall export / recall import) — round-trippable serialization of the v0.1 recall store as NDJSON. Closes the remaining standalone-buildable v0.2 item alongside recall-doctor (slice 1) and recall-ops (slice 2). Use cases: backup/restore, migration to v0.2 schema, manual editing in a single editable file.
